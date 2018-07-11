@@ -2,6 +2,8 @@
 
 **Benchmarks for concurrent access to key/value data structures.**
 
+[![Build Status](https://travis-ci.com/bbengfort/speedmap.svg?branch=master)](https://travis-ci.com/bbengfort/speedmap)
+
 Here's the scenario: multiple clients are reading and writing values to different keys in a shared data structure. Each client is in their own go routine, unfortunately this means that a lock or a channel is required to synchronize accesses to the store. In this repository we explore different synchronization methods for concurrent access to the store to find out what is the most performant for various workloads.
 
 There are two parts to each benchmark:
@@ -23,6 +25,12 @@ type Store interface {
 
 The following stores have been implemented:
 
-1. Basic: wraps a `map[string][]byte` with a `sync.RWMutex` (baseline) and treats `GetDefault` as a write operation.
-2. Misframe: optimizes `GetDefault` as described in [Optimizing Concurrent Map Access in Go](https://misfra.me/optimizing-concurrent-map-access-in-go/).
+1. Basic: wraps a `map[string][]byte` with a `sync.RWMutex` (baseline) and treats `GetOrCreate` as a write operation.
+2. Misframe: optimizes `GetOrCreate` as described in [Optimizing Concurrent Map Access in Go](https://misfra.me/optimizing-concurrent-map-access-in-go/).
 3. [`sync.Map`](https://golang.org/pkg/sync/#Map): the official concurrent map object in the sync package.
+
+The workload interface is really just about running and collecting results:
+
+```go
+ß
+```

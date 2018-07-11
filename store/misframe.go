@@ -1,4 +1,4 @@
-package speedmap
+package store
 
 import (
 	"fmt"

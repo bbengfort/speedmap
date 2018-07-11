@@ -1,23 +1,24 @@
-package speedmap_test
+package store_test
 
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/bbengfort/speedmap"
+	"github.com/bbengfort/speedmap"
+	. "github.com/bbengfort/speedmap/store"
 )
 
-var _ = Describe("Sync", func() {
+var _ = Describe("Misframe", func() {
 
-	var store Store
+	var store speedmap.Store
 
 	BeforeEach(func() {
-		store = &SyncMap{}
+		store = &Misframe{}
 		Ω(store.Init()).Should(Succeed())
 	})
 
 	It("should be a store", func() {
-		Ω(&SyncMap{}).Should(BeAssignableToTypeOf(store))
+		Ω(&Misframe{}).Should(BeAssignableToTypeOf(store))
 	})
 
 	It("should be able to perform store operations", func() {
@@ -43,4 +44,5 @@ var _ = Describe("Sync", func() {
 		Ω(actual).Should(Equal([]byte("bar")))
 		Ω(created).Should(BeFalse())
 	})
+
 })
