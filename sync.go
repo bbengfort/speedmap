@@ -46,6 +46,6 @@ func (s *SyncMap) Delete(key string) (err error) {
 
 // GetOrCreate is an alias for sync.Map.LoadOrStore.
 func (s *SyncMap) GetOrCreate(key string, value []byte) (actual []byte, created bool) {
-	data, created := s.data.LoadOrStore(key, value)
-	return data.([]byte), created
+	data, loaded := s.data.LoadOrStore(key, value)
+	return data.([]byte), !loaded
 }

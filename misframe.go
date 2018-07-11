@@ -6,7 +6,9 @@ import (
 )
 
 // Misframe extends the Basic synchronized map structure with an optimized
-// GetOrCreate method that doesn't use a Lock.
+// GetOrCreate method that doesn't use a Lock but rather uses a two phase
+// check and lock cycle with both read and write locks, as described at:
+// https://misfra.me/optimizing-concurrent-map-access-in-go/
 type Misframe struct {
 	sync.RWMutex
 	data map[string][]byte
