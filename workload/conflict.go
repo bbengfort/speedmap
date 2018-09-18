@@ -10,9 +10,9 @@ import (
 )
 
 // NewConflict workload with the specified probability.
-func NewConflict(prob float32) *Conflict {
+func NewConflict(prob, readratio float32) *Conflict {
 	return &Conflict{
-		readratio: 0.5,
+		readratio: readratio,
 		prob:      prob,
 		keys:      MaxKeys,
 	}
@@ -71,4 +71,17 @@ func (c *Conflict) client(i int, store speedmap.Store, group *sync.WaitGroup) {
 		}
 	}
 	group.Done()
+}
+
+// String returns a representation of the conflict workload
+func (c *Conflict) String() string {
+	if c.readratio == 1.0 {
+		return fmt.Sprintf("%0.2f%% conflict read-only", c.prob)
+	}
+
+	if c.readratio == 0.0 {
+		return fmt.Sprintf("%0.2f%% conflict write-only", c.prob)
+	}
+
+	return fmt.Sprintf("%0.2f conflict %0.2f reads", c.prob, c.readratio)
 }

@@ -72,3 +72,8 @@ func (s *Misframe) GetOrCreate(key string, value []byte) (actual []byte, created
 	s.RUnlock()
 	return actual, false
 }
+
+// String returns a string representation of the Store
+func (s *Misframe) String() string {
+	return "misframe"
+}

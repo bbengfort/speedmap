@@ -10,6 +10,9 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+// Version of the speedmap package
+const Version = "1.0"
+
 // Store represents the interface for all in-memory key/value data structures
 // that are being benchmarked by the Speed Map package.
 type Store interface {
@@ -18,6 +21,7 @@ type Store interface {
 	Put(key string, value []byte) (err error)
 	Delete(key string) (err error)
 	GetOrCreate(key string, value []byte) (actual []byte, created bool)
+	String() string
 }
 
 // Workload is an interface for creating a benchmark that runs operations
@@ -26,6 +30,7 @@ type Store interface {
 // the duration of the benchmark.
 type Workload interface {
 	Run(store Store, clients int) (*Result, error)
+	String() string
 }
 
 // Result holds a record for a run of the workload execution.
@@ -50,7 +55,7 @@ func (r *Result) Throughput() float64 {
 // store,workload,concurrency,operations,duration (ns),throughput
 func (r *Result) String() string {
 	return fmt.Sprintf(
-		"%T,%T,%d,%d,%d,%0.3f\n",
+		"%s,%s,%d,%d,%d,%0.3f\n",
 		r.Store,
 		r.Workload,
 		r.Concurrency,

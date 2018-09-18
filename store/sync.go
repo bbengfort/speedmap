@@ -49,3 +49,8 @@ func (s *SyncMap) GetOrCreate(key string, value []byte) (actual []byte, created 
 	data, loaded := s.data.LoadOrStore(key, value)
 	return data.([]byte), !loaded
 }
+
+// String returns a string representation of the Store
+func (s *SyncMap) String() string {
+	return "sync map"
+}

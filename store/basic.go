@@ -66,3 +66,8 @@ func (s *Basic) GetOrCreate(key string, value []byte) (actual []byte, created bo
 
 	return actual, false
 }
+
+// String returns a string representation of the Store
+func (s *Basic) String() string {
+	return "basic"
+}

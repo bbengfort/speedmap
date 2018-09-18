@@ -29,8 +29,4 @@ The following stores have been implemented:
 2. Misframe: optimizes `GetOrCreate` as described in [Optimizing Concurrent Map Access in Go](https://misfra.me/optimizing-concurrent-map-access-in-go/).
 3. [`sync.Map`](https://golang.org/pkg/sync/#Map): the official concurrent map object in the sync package.
 
-The workload interface is really just about running and collecting results:
-
-```go
-ß
-```
+![Benchmark Results](fixtures/results.png)
