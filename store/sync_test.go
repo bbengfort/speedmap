@@ -1,6 +1,8 @@
 package store_test
 
 import (
+	"fmt"
+
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
@@ -47,4 +49,40 @@ var _ = Describe("Sync", func() {
 		Ω(actual).Should(Equal([]byte("bar")))
 		Ω(created).Should(BeFalse())
 	})
+
+	Measure("get throughput", func(b Benchmarker) {
+		// Populate the store
+		for i := 0; i < 5000; i++ {
+			key := fmt.Sprintf("%X", i)
+			store.Put(key, []byte(key))
+		}
+
+		results, err := Blast(store, 5000, "Get")
+		Ω(err).ShouldNot(HaveOccurred())
+		b.RecordValue("throughput", results.Throughput)
+	}, 10)
+
+	Measure("put throughput", func(b Benchmarker) {
+		results, err := Blast(store, 5000, "Put")
+		Ω(err).ShouldNot(HaveOccurred())
+		b.RecordValue("throughput", results.Throughput)
+	}, 10)
+
+	Measure("delete throughput", func(b Benchmarker) {
+		// Populate the store
+		for i := 0; i < 5000; i++ {
+			key := fmt.Sprintf("%X", i)
+			store.Put(key, []byte(key))
+		}
+
+		results, err := Blast(store, 5000, "Delete")
+		Ω(err).ShouldNot(HaveOccurred())
+		b.RecordValue("throughput", results.Throughput)
+	}, 10)
+
+	Measure("get or create throughput", func(b Benchmarker) {
+		results, err := Blast(store, 5000, "GetOrCreate")
+		Ω(err).ShouldNot(HaveOccurred())
+		b.RecordValue("throughput", results.Throughput)
+	}, 10)
 })
