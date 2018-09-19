@@ -15,6 +15,7 @@ func NewConflict(prob, readratio float32) *Conflict {
 		readratio: readratio,
 		prob:      prob,
 		keys:      MaxKeys,
+		size:      DataSize,
 	}
 }
 
@@ -25,12 +26,11 @@ type Conflict struct {
 	readratio float32 // ratio of reads to writes
 	prob      float32 // probability of conflict
 	keys      int64   // the number of keys (each key identified by number)
-	clients   int     // the number of clients
+	size      int     // the size of the value to write
 }
 
 // Run the conflict workload for the specified number of clients.
 func (c *Conflict) Run(store speedmap.Store, clients int) (*speedmap.Result, error) {
-	c.clients = clients
 	result := &speedmap.Result{Store: store, Workload: c, Concurrency: clients}
 
 	group := &sync.WaitGroup{}
@@ -47,19 +47,52 @@ func (c *Conflict) Run(store speedmap.Store, clients int) (*speedmap.Result, err
 	return result, nil
 }
 
-// Runs the ith client in a go routine.
+// Runs the ith client in a go routine generating values as the byte string of
+// the client number - operation number. Note that i must be 1-index to ensure
+// that keyspace 0 is the conflict space.
 func (c *Conflict) client(i int, store speedmap.Store, group *sync.WaitGroup) {
 	r := int64(i)
+
 	for o := 0; o < OpsPerThread; o++ {
 		var key string
-		var val = []byte(fmt.Sprintf("the time is now %s", time.Now()))
+		val := []byte(fmt.Sprintf("%X-%X", r, o))
 
 		if rand.Float32() < c.prob {
 			// We have a conflict select any key in the key group
 			// TODO: make sure own keyspace isn't selected
-			key = fmt.Sprintf("%X", rand.Int63n(c.keys))
+			key = RandomKey(0, c.keys)
 		} else {
-			key = fmt.Sprintf("%X", rand.Int63n(c.keys)*r)
+			key = RandomKey(r, c.keys)
+		}
+
+		if rand.Float32() <= c.readratio {
+			// GetOrCreate a key
+			store.GetOrCreate(key, val)
+		} else {
+			// Put a key
+			store.Put(key, val)
+		}
+	}
+	group.Done()
+}
+
+// Runs the ith client in a go routine generating random values and mutating
+// them according to the size of the writes. Note that i must be 1-index to
+// ensure that keyspace 0 is the conflict space.
+func (c *Conflict) complexClient(i int, store speedmap.Store, group *sync.WaitGroup) {
+	r := int64(i)
+	val, _ := GenerateRandomBytes(c.size)
+
+	for o := 0; o < OpsPerThread; o++ {
+		var key string
+		RandomMutation(val, 8)
+
+		if rand.Float32() < c.prob {
+			// We have a conflict select any key in the shared key group
+			key = RandomKey(0, c.keys)
+		} else {
+			// Select a key in the clients own keyspace
+			key = RandomKey(r, c.keys)
 		}
 
 		if rand.Float32() <= c.readratio {
@@ -75,13 +108,15 @@ func (c *Conflict) client(i int, store speedmap.Store, group *sync.WaitGroup) {
 
 // String returns a representation of the conflict workload
 func (c *Conflict) String() string {
+	prob := c.prob * 100
+
 	if c.readratio == 1.0 {
-		return fmt.Sprintf("%0.2f%% conflict read-only", c.prob)
+		return fmt.Sprintf("%0.0f%% conflict read-only", prob)
 	}
 
 	if c.readratio == 0.0 {
-		return fmt.Sprintf("%0.2f%% conflict write-only", c.prob)
+		return fmt.Sprintf("%0.0f%% conflict write-only", prob)
 	}
 
-	return fmt.Sprintf("%0.2f conflict %0.2f reads", c.prob, c.readratio)
+	return fmt.Sprintf("%0.0f%% conflict %0.0f%% reads", prob, c.readratio*100)
 }

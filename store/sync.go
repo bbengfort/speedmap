@@ -10,10 +10,11 @@ type SyncMap struct {
 	data *sync.Map
 }
 
-// Init creates the sync.Map
-func (s *SyncMap) Init() (err error) {
-	s.data = new(sync.Map)
-	return nil
+// NewSyncMap creates and initializes a SyncMap store.
+func NewSyncMap() (store *SyncMap, err error) {
+	store = new(SyncMap)
+	store.data = new(sync.Map)
+	return store, nil
 }
 
 // Get is an alias for sync.Map.Load. Returns an error if key not found or

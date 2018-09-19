@@ -10,11 +10,14 @@ import (
 
 var _ = Describe("Basic", func() {
 
-	var store speedmap.Store
+	var (
+		err   error
+		store speedmap.Store
+	)
 
 	BeforeEach(func() {
-		store = &Basic{}
-		Ω(store.Init()).Should(Succeed())
+		store, err = NewBasic()
+		Ω(err).ShouldNot(HaveOccurred())
 	})
 
 	It("should be a store", func() {

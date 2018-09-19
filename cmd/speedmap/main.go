@@ -55,6 +55,10 @@ func main() {
 			Name:  "S, no-sync",
 			Usage: "exclude the sync map store from evaluation",
 		},
+		cli.BoolFlag{
+			Name:  "H, no-shard",
+			Usage: "exclude the shard store from evaluation",
+		},
 	}
 
 	// Run the CLI program
@@ -62,7 +66,7 @@ func main() {
 
 }
 
-func bench(c *cli.Context) error {
+func bench(c *cli.Context) (err error) {
 
 	N := c.Int("rounds")
 	T := c.Int("threads")
@@ -72,27 +76,35 @@ func bench(c *cli.Context) error {
 	bench := speedmap.New(workload, T)
 
 	if !c.Bool("no-basic") {
-		basic := new(store.Basic)
-		if err := basic.Init(); err != nil {
+		var basic *store.Basic
+		if basic, err = store.NewBasic(); err != nil {
 			return cli.NewExitError(err.Error(), 1)
 		}
 		stores = append(stores, basic)
 	}
 
 	if !c.Bool("no-misframe") {
-		msfr := new(store.Misframe)
-		if err := msfr.Init(); err != nil {
+		var msfr *store.Misframe
+		if msfr, err = store.NewMisframe(); err != nil {
 			return cli.NewExitError(err.Error(), 1)
 		}
 		stores = append(stores, msfr)
 	}
 
 	if !c.Bool("no-sync") {
-		smap := new(store.SyncMap)
-		if err := smap.Init(); err != nil {
+		var smap *store.SyncMap
+		if smap, err = store.NewSyncMap(); err != nil {
 			return cli.NewExitError(err.Error(), 1)
 		}
 		stores = append(stores, smap)
+	}
+
+	if !c.Bool("no-shard") {
+		var shard store.Shard
+		if shard, err = store.NewShard(); err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
+		stores = append(stores, shard)
 	}
 
 	rounds := N * T * len(stores)

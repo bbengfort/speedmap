@@ -8,7 +8,7 @@ import (
 	. "github.com/bbengfort/speedmap/store"
 )
 
-var _ = Describe("Sync", func() {
+var _ = Describe("Shard", func() {
 
 	var (
 		err   error
@@ -16,12 +16,12 @@ var _ = Describe("Sync", func() {
 	)
 
 	BeforeEach(func() {
-		store, err = NewSyncMap()
+		store, err = NewShard()
 		Ω(err).ShouldNot(HaveOccurred())
 	})
 
 	It("should be a store", func() {
-		Ω(&SyncMap{}).Should(BeAssignableToTypeOf(store))
+		Ω(make(Shard, 0)).Should(BeAssignableToTypeOf(store))
 	})
 
 	It("should be able to perform store operations", func() {
@@ -47,4 +47,5 @@ var _ = Describe("Sync", func() {
 		Ω(actual).Should(Equal([]byte("bar")))
 		Ω(created).Should(BeFalse())
 	})
+
 })

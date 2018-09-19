@@ -13,10 +13,11 @@ type Basic struct {
 	data map[string][]byte
 }
 
-// Init the internal map.
-func (s *Basic) Init() (err error) {
-	s.data = make(map[string][]byte)
-	return nil
+// NewBasic creates a Basic store and initializes the internal map.
+func NewBasic() (store *Basic, err error) {
+	store = new(Basic)
+	store.data = make(map[string][]byte)
+	return store, nil
 }
 
 // Get a value by read locking the internal map and fetching it. If the key

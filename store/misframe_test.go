@@ -10,11 +10,14 @@ import (
 
 var _ = Describe("Misframe", func() {
 
-	var store speedmap.Store
+	var (
+		err   error
+		store speedmap.Store
+	)
 
 	BeforeEach(func() {
-		store = &Misframe{}
-		Ω(store.Init()).Should(Succeed())
+		store, err = NewMisframe()
+		Ω(err).ShouldNot(HaveOccurred())
 	})
 
 	It("should be a store", func() {

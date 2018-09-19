@@ -11,12 +11,11 @@ func init() {
 }
 
 // Version of the speedmap package
-const Version = "1.0"
+const Version = "1.1"
 
 // Store represents the interface for all in-memory key/value data structures
 // that are being benchmarked by the Speed Map package.
 type Store interface {
-	Init() (err error)
 	Get(key string) (value []byte, err error)
 	Put(key string, value []byte) (err error)
 	Delete(key string) (err error)

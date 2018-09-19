@@ -14,10 +14,11 @@ type Misframe struct {
 	data map[string][]byte
 }
 
-// Init the internal map.
-func (s *Misframe) Init() (err error) {
-	s.data = make(map[string][]byte)
-	return nil
+// NewMisframe creates the Misframe store and initializes the internal map.
+func NewMisframe() (store *Misframe, err error) {
+	store = new(Misframe)
+	store.data = make(map[string][]byte)
+	return store, nil
 }
 
 // Get a value by read locking the internal map and fetching it. If the key
