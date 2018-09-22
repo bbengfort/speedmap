@@ -13,7 +13,8 @@ sns.set_context("notebook")
 
 
 FIXTURES = os.path.dirname(__file__)
-RESULTS = os.path.join(FIXTURES, "results.csv")
+FIGURES = os.path.join(FIXTURES, "figures")
+RESULTS = os.path.join(FIXTURES, "data", "results.csv")
 
 
 def lineplot(x, y, hue, data, ax=None):
