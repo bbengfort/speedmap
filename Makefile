@@ -1,10 +1,10 @@
-# Scripts to handle Raft build and installation
+# Scripts to handle SpeedMap build and installation
 # Shell to use with Make
 SHELL := /bin/bash
 
 # Build Environment
-PACKAGE = raft
-PBPKG = $(CURDIR)/pb
+PACKAGE = speedmap
+PBPKG = $(CURDIR)/server/pb
 BUILD = $(CURDIR)/_build
 
 # Commands
@@ -25,23 +25,23 @@ RM = $(shell printf "\033[31;1m●\033[0m")
 
 
 # Export targets not associated with files.
-.PHONY: all install build raft deps test citest clean doc protobuf
+.PHONY: all install build speedmap deps test citest clean doc protobuf
 
 # Ensure dependencies are installed, run tests and compile
 all: deps build test
 
 # Install the commands and create configurations and data directories
 install: build
-	$(info $(GM) installing raft and making configuration …)
-	@ cp $(BUILD)/raft /usr/local/bin/
+	$(info $(GM) installing speedmap and making configuration …)
+	@ cp $(BUILD)/speedmap /usr/local/bin/
 
 # Build the various binaries and sources
-build: protobuf raft
+build: protobuf speedmap
 
-# Build the raft command and store in the build directory
-raft:
-	$(info $(GM) compiling raft executable …)
-	@ $(GOBUILD) -o $(BUILD)/raft ./cmd/raft
+# Build the speedmap command and store in the build directory
+speedmap:
+	$(info $(GM) compiling speedmap executable …)
+	@ $(GOBUILD) -o $(BUILD)/speedmap ./cmd/speedmap
 
 # Use dep to collect dependencies.
 deps:
@@ -62,7 +62,7 @@ citest:
 doc:
 	$(info $(BM) running go documentation server at http://localhost:6060)
 	$(info $(BM) type CTRL+C to exit the server)
-	@ open http://localhost:6060/pkg/github.com/bbengfort/raft/
+	@ open http://localhost:6060/pkg/github.com/bbengfort/speedmap/
 	@ $(GODOC) --http=:6060
 
 # Clean build files

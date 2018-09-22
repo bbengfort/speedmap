@@ -1,0 +1,11 @@
+syntax = "proto3";
+package pb;
+
+import "client.proto";
+
+// Defines the service beteween the wrapped in-memory store and network clients.
+service KV {
+    rpc Get (GetRequest) returns (ClientReply) {}
+    rpc Put (PutRequest) returns (ClientReply) {}
+    rpc Del (DelRequest) returns (ClientReply) {}
+}

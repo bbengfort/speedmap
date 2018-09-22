@@ -1,0 +1,36 @@
+syntax = "proto3";
+package pb;
+
+//===========================================================================
+// Key-Value Store Operations
+//===========================================================================
+
+message GetRequest {
+    string identity = 1;  // Unique identity for the client, used in benchmarks
+    string key = 2;       // Name of the object to get the request for
+}
+
+message PutRequest {
+    string identity = 1;  // Unique identity for the client, used in benchmarks
+    string key = 2;       // Name of the object to put the value to
+    bytes value = 7;      // Value to put for the assoicated object
+}
+
+message DelRequest {
+    string identity = 1;  // Unique identity for the client, used in benchmarks
+    string key = 2;       // Name of the object to delete
+    bool force = 3;       // Ignore any errors that might occur
+}
+
+message ClientReply {
+    bool success = 1;     // Whether or not the operation completed
+    string redirect = 2;  // The name of the leader to redirect the request to
+    string error = 3;     // Any errors if success is false
+    KVPair pair = 7;      // The key/value pair and version from the operation
+}
+
+// Used for transmitting key/value pairs on the network
+message KVPair {
+    string key = 1;      // The name of the object
+    bytes value = 2;     // The versioned value of the object
+}
