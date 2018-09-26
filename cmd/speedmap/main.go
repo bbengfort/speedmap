@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/bbengfort/speedmap"
 	"github.com/bbengfort/speedmap/server"
@@ -94,6 +95,10 @@ func main() {
 					Name:  "H, shard",
 					Usage: "serve the shard store",
 				},
+				cli.DurationFlag{
+					Name:  "u, uptime",
+					Usage: "run the server for a fixed amount of time",
+				},
 			},
 		},
 	}
@@ -164,6 +169,12 @@ func bench(c *cli.Context) (err error) {
 }
 
 func serve(c *cli.Context) (err error) {
+	if uptime := c.Duration("uptime"); uptime > 0 {
+		time.AfterFunc(uptime, func() {
+			os.Exit(0)
+		})
+	}
+
 	var kv speedmap.Store
 
 	switch {

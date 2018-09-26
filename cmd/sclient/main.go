@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/bbengfort/speedmap"
 	"github.com/bbengfort/speedmap/server"
@@ -10,7 +11,10 @@ import (
 	"github.com/urfave/cli"
 )
 
-var client *server.Client
+var (
+	addr, identity string
+	client         *server.Client
+)
 
 func main() {
 
@@ -75,6 +79,31 @@ func main() {
 				},
 			},
 		},
+		{
+			Name:   "blast",
+			Usage:  "run blast throughput benchmark against speedmap server",
+			Action: blast,
+			Flags: []cli.Flag{
+				cli.UintFlag{
+					Name:  "r, requests",
+					Usage: "number of requests issued per client",
+					Value: 1000,
+				},
+				cli.UintFlag{
+					Name:  "s, size",
+					Usage: "number of bytes per value",
+					Value: 32,
+				},
+				cli.DurationFlag{
+					Name:  "d, delay",
+					Usage: "wait specified time before starting benchmark",
+				},
+				cli.IntFlag{
+					Name:  "i, indent",
+					Usage: "indent the results by specified number of spaces",
+				},
+			},
+		},
 	}
 
 	// Run the CLI program
@@ -83,8 +112,10 @@ func main() {
 }
 
 func initClient(c *cli.Context) error {
-	client = server.NewClient(c.String("identity"))
-	if err := client.Connect(c.String("addr")); err != nil {
+	addr, identity = c.String("addr"), c.String("identity")
+
+	client = server.NewClient(identity)
+	if err := client.Connect(addr); err != nil {
 		return cli.NewExitError(err.Error(), 1)
 	}
 
@@ -132,5 +163,33 @@ func del(c *cli.Context) (err error) {
 		return cli.NewExitError(rep.Error, 2)
 	}
 
+	return nil
+}
+
+func blast(c *cli.Context) error {
+	if delay := c.Duration("delay"); delay > 0 {
+		time.Sleep(delay)
+	}
+
+	// Close the client
+	client.Close()
+
+	// Create options for benchmark
+	N := c.Uint("requests")
+	S := c.Uint("size")
+
+	// Create and run benchmark
+	benchmark := &server.Blast{}
+	if err := benchmark.Run(addr, N, S); err != nil {
+		return cli.NewExitError(err.Error(), 1)
+	}
+
+	// Print the results
+	results, err := benchmark.JSON(c.Int("indent"))
+	if err != nil {
+		return cli.NewExitError(err.Error(), 1)
+	}
+
+	fmt.Println(string(results))
 	return nil
 }

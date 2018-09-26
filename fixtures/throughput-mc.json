@@ -1,0 +1,445 @@
+{"benchmark":"multiclient","duration":"15.955908ms","failures":0,"requests":50,"throughput":3133.6355160734192,"version":"1.1"}
+{"benchmark":"multiclient","duration":"28.146827ms","failures":0,"requests":100,"throughput":3552.798331406947,"version":"1.1"}
+{"benchmark":"multiclient","duration":"37.231232ms","failures":0,"requests":150,"throughput":4028.875541910619,"version":"1.1"}
+48: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"42.188099ms","failures":48,"requests":152,"throughput":3602.9118069529513,"version":"1.1"}
+{"benchmark":"multiclient","duration":"55.087053ms","failures":0,"requests":250,"throughput":4538.271451914482,"version":"1.1"}
+123: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.371937152s","failures":123,"requests":177,"throughput":129.01465620489296,"version":"1.1"}
+193: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.416688168s","failures":193,"requests":157,"throughput":110.82184742295384,"version":"1.1"}
+214: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.388300341s","failures":214,"requests":186,"throughput":133.976773257884,"version":"1.1"}
+251: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.414633989s","failures":251,"requests":199,"throughput":140.67242943927315,"version":"1.1"}
+302: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.459596162s","failures":302,"requests":198,"throughput":135.65396042744595,"version":"1.1"}
+319: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.263762698s","failures":319,"requests":231,"throughput":54.17749916250147,"version":"1.1"}
+433: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.289137166s","failures":433,"requests":167,"throughput":38.93556991457615,"version":"1.1"}
+462: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.36458905s","failures":462,"requests":188,"throughput":43.073929262595755,"version":"1.1"}
+534: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.57029495s","failures":534,"requests":166,"throughput":36.32150699595439,"version":"1.1"}
+604: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.814158581s","failures":604,"requests":146,"throughput":16.56425836434585,"version":"1.1"}
+739: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.009263176s","failures":739,"requests":61,"throughput":3.0485880196311332,"version":"1.1"}
+766: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.016676546s","failures":766,"requests":84,"throughput":4.196500843032607,"version":"1.1"}
+848: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.036505724s","failures":848,"requests":52,"throughput":2.5952629024388063,"version":"1.1"}
+896: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.99602163s","failures":896,"requests":54,"throughput":2.7005371868063937,"version":"1.1"}
+961: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.017741328s","failures":961,"requests":39,"throughput":1.948271753589322,"version":"1.1"}
+{"benchmark":"multiclient","duration":"21.546469ms","failures":0,"requests":50,"throughput":2320.565843062267,"version":"1.1"}
+{"benchmark":"multiclient","duration":"24.30832ms","failures":0,"requests":100,"throughput":4113.817820400587,"version":"1.1"}
+{"benchmark":"multiclient","duration":"35.876977ms","failures":0,"requests":150,"throughput":4180.954264903646,"version":"1.1"}
+10: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"50.132605ms","failures":10,"requests":190,"throughput":3789.948677113428,"version":"1.1"}
+102: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.366500828s","failures":102,"requests":148,"throughput":108.30582533682885,"version":"1.1"}
+146: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"378.662059ms","failures":146,"requests":154,"throughput":406.6950895653372,"version":"1.1"}
+182: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.406415953s","failures":182,"requests":168,"throughput":119.45256994678017,"version":"1.1"}
+235: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.411552943s","failures":235,"requests":165,"throughput":116.89253372907316,"version":"1.1"}
+204: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.440585598s","failures":204,"requests":246,"throughput":170.76388958873932,"version":"1.1"}
+347: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.264652192s","failures":347,"requests":153,"throughput":35.87631373245643,"version":"1.1"}
+203: rpc error: code = Unavailable desc = transport is closing
+1: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: connection error: desc = "transport: failed to write client preface: write tcp [::1]:63981->[::1]:3264: write: broken pipe"
+{"benchmark":"multiclient","duration":"1.481044324s","failures":204,"requests":346,"throughput":233.61893657951052,"version":"1.1"}
+276: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.489876154s","failures":276,"requests":324,"throughput":217.46773993940974,"version":"1.1"}
+487: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.328562632s","failures":487,"requests":163,"throughput":37.65684220322494,"version":"1.1"}
+563: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.788057208s","failures":563,"requests":137,"throughput":28.6128577935738,"version":"1.1"}
+667: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.699449986s","failures":667,"requests":83,"throughput":9.540833056523306,"version":"1.1"}
+757: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.009386051s","failures":757,"requests":43,"throughput":2.1489914728218764,"version":"1.1"}
+785: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.02038915s","failures":785,"requests":65,"throughput":3.2466901373892627,"version":"1.1"}
+786: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.005634202s","failures":786,"requests":114,"throughput":5.698394704657911,"version":"1.1"}
+893: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.008260707s","failures":893,"requests":57,"throughput":2.848823335256634,"version":"1.1"}
+939: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.013076621s","failures":939,"requests":61,"throughput":3.048007118305431,"version":"1.1"}
+{"benchmark":"multiclient","duration":"16.424109ms","failures":0,"requests":50,"throughput":3044.305173571364,"version":"1.1"}
+{"benchmark":"multiclient","duration":"29.266249ms","failures":0,"requests":100,"throughput":3416.9052549235125,"version":"1.1"}
+{"benchmark":"multiclient","duration":"39.048805ms","failures":0,"requests":150,"throughput":3841.3467454381766,"version":"1.1"}
+41: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"50.542238ms","failures":41,"requests":159,"throughput":3145.8836468618583,"version":"1.1"}
+{"benchmark":"multiclient","duration":"56.356007ms","failures":0,"requests":250,"throughput":4436.084337912727,"version":"1.1"}
+149: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.396915972s","failures":149,"requests":151,"throughput":62.997619342494,"version":"1.1"}
+184: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.428468088s","failures":184,"requests":166,"throughput":68.3558498545936,"version":"1.1"}
+233: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.390476645s","failures":233,"requests":167,"throughput":69.86054448567934,"version":"1.1"}
+286: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.435076078s","failures":286,"requests":164,"throughput":114.27965563230579,"version":"1.1"}
+338: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.274510111s","failures":338,"requests":162,"throughput":37.89907984615831,"version":"1.1"}
+349: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.307037208s","failures":349,"requests":201,"throughput":46.66781137313082,"version":"1.1"}
+417: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.342933974s","failures":417,"requests":183,"throughput":42.13741242569487,"version":"1.1"}
+393: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.300422201s","failures":393,"requests":257,"throughput":59.761574093873485,"version":"1.1"}
+546: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.656023922s","failures":546,"requests":154,"throughput":33.07543143675455,"version":"1.1"}
+602: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.614983298s","failures":602,"requests":148,"throughput":17.17937166916606,"version":"1.1"}
+708: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"16.476695819s","failures":708,"requests":92,"throughput":5.583643772431046,"version":"1.1"}
+781: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.021658148s","failures":781,"requests":69,"throughput":3.446268010868647,"version":"1.1"}
+839: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.987611585s","failures":839,"requests":61,"throughput":3.0518904042431143,"version":"1.1"}
+886: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.004184079s","failures":886,"requests":64,"throughput":3.199330687382843,"version":"1.1"}
+740: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.035789772s","failures":740,"requests":260,"throughput":12.976778203340393,"version":"1.1"}
+{"benchmark":"multiclient","duration":"18.589822ms","failures":0,"requests":50,"throughput":2689.6438276816207,"version":"1.1"}
+{"benchmark":"multiclient","duration":"29.633684ms","failures":0,"requests":100,"throughput":3374.5382450592374,"version":"1.1"}
+{"benchmark":"multiclient","duration":"42.369955ms","failures":0,"requests":150,"throughput":3540.244496365408,"version":"1.1"}
+42: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"49.868342ms","failures":42,"requests":158,"throughput":3168.3427534045545,"version":"1.1"}
+83: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.348769909s","failures":83,"requests":167,"throughput":123.8165226593886,"version":"1.1"}
+107: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"204.367884ms","failures":107,"requests":193,"throughput":944.3753892367941,"version":"1.1"}
+175: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.394420757s","failures":175,"requests":175,"throughput":125.50013984050297,"version":"1.1"}
+184: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.423807419s","failures":184,"requests":216,"throughput":151.70590988471312,"version":"1.1"}
+291: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.457811936s","failures":291,"requests":159,"throughput":109.0675663119279,"version":"1.1"}
+333: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.457807775s","failures":333,"requests":167,"throughput":114.55556957775177,"version":"1.1"}
+366: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.312167132s","failures":366,"requests":184,"throughput":42.66996022361037,"version":"1.1"}
+425: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.339150498s","failures":425,"requests":175,"throughput":40.33047484309681,"version":"1.1"}
+431: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.345093658s","failures":431,"requests":219,"throughput":50.40167536936439,"version":"1.1"}
+544: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.527422603s","failures":544,"requests":156,"throughput":34.45669063379017,"version":"1.1"}
+644: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.712254694s","failures":644,"requests":106,"throughput":12.166770109808729,"version":"1.1"}
+753: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.005131661s","failures":753,"requests":47,"throughput":2.3493971845047383,"version":"1.1"}
+787: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.034537331s","failures":787,"requests":63,"throughput":3.144569747688575,"version":"1.1"}
+880: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.005692516s","failures":880,"requests":20,"throughput":0.9997154551887946,"version":"1.1"}
+872: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.029465711s","failures":872,"requests":78,"throughput":3.894262639125871,"version":"1.1"}
+941: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.023305612s","failures":941,"requests":59,"throughput":2.946566423310305,"version":"1.1"}
+{"benchmark":"multiclient","duration":"17.25263ms","failures":0,"requests":50,"throughput":2898.1088680392495,"version":"1.1"}
+{"benchmark":"multiclient","duration":"30.380168ms","failures":0,"requests":100,"throughput":3291.621033827068,"version":"1.1"}
+{"benchmark":"multiclient","duration":"40.005601ms","failures":0,"requests":150,"throughput":3749.4749797659583,"version":"1.1"}
+49: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"55.276062ms","failures":49,"requests":151,"throughput":2731.7430825661927,"version":"1.1"}
+91: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.343446659s","failures":91,"requests":159,"throughput":118.3522984964303,"version":"1.1"}
+148: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"384.862254ms","failures":148,"requests":152,"throughput":394.94649948186395,"version":"1.1"}
+110: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.381437415s","failures":110,"requests":240,"throughput":173.7320832590885,"version":"1.1"}
+236: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.419073848s","failures":236,"requests":164,"throughput":115.56833369252534,"version":"1.1"}
+253: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.444836296s","failures":253,"requests":197,"throughput":136.3476267487123,"version":"1.1"}
+336: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.253427406s","failures":336,"requests":164,"throughput":38.557140946770865,"version":"1.1"}
+354: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.278803951s","failures":354,"requests":196,"throughput":45.80719337566116,"version":"1.1"}
+392: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.295138277s","failures":392,"requests":208,"throughput":48.426846025846814,"version":"1.1"}
+441: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.382636994s","failures":441,"requests":209,"throughput":47.6881841425902,"version":"1.1"}
+544: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.740840381s","failures":544,"requests":156,"throughput":32.90555839534392,"version":"1.1"}
+673: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.711732684s","failures":673,"requests":77,"throughput":8.838655040623376,"version":"1.1"}
+769: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.998054743s","failures":769,"requests":31,"throughput":1.5501507720820222,"version":"1.1"}
+816: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.00358569s","failures":816,"requests":34,"throughput":1.6996952709831894,"version":"1.1"}
+823: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.000548692s","failures":823,"requests":77,"throughput":3.849894379687651,"version":"1.1"}
+868: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.016775272s","failures":868,"requests":82,"throughput":4.0965639512726,"version":"1.1"}
+938: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.038224418s","failures":938,"requests":62,"throughput":3.094086517181954,"version":"1.1"}
+{"benchmark":"multiclient","duration":"20.114967ms","failures":0,"requests":50,"throughput":2485.711261668985,"version":"1.1"}
+{"benchmark":"multiclient","duration":"29.050182ms","failures":0,"requests":100,"throughput":3442.3192254010664,"version":"1.1"}
+{"benchmark":"multiclient","duration":"38.717764ms","failures":0,"requests":150,"throughput":3874.190668655349,"version":"1.1"}
+{"benchmark":"multiclient","duration":"47.686859ms","failures":0,"requests":200,"throughput":4194.027541214237,"version":"1.1"}
+84: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.009399971s","failures":84,"requests":166,"throughput":8.296100844632369,"version":"1.1"}
+155: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.401335918s","failures":155,"requests":145,"throughput":60.38305549552855,"version":"1.1"}
+203: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.384261641s","failures":203,"requests":147,"throughput":61.65430734285759,"version":"1.1"}
+237: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.427878592s","failures":237,"requests":163,"throughput":114.15536370756094,"version":"1.1"}
+288: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.459039044s","failures":288,"requests":162,"throughput":111.03198414476425,"version":"1.1"}
+335: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.461140025s","failures":335,"requests":165,"throughput":112.92552197384369,"version":"1.1"}
+169: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.428822668s","failures":169,"requests":381,"throughput":266.6531043585039,"version":"1.1"}
+359: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.316961541s","failures":359,"requests":241,"throughput":55.826302298763046,"version":"1.1"}
+495: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.33476526s","failures":495,"requests":155,"throughput":35.757414924009055,"version":"1.1"}
+540: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.667804681s","failures":540,"requests":160,"throughput":34.277355402480694,"version":"1.1"}
+647: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.753359811s","failures":647,"requests":103,"throughput":11.766910332026338,"version":"1.1"}
+723: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.825746642s","failures":723,"requests":77,"throughput":8.724474327596498,"version":"1.1"}
+824: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.020781068s","failures":824,"requests":26,"throughput":1.2986506326447382,"version":"1.1"}
+875: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.0115968s","failures":875,"requests":25,"throughput":1.249275620024485,"version":"1.1"}
+919: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.006316085s","failures":919,"requests":31,"throughput":1.5495106579487994,"version":"1.1"}
+975: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.025252019s","failures":975,"requests":25,"throughput":1.2484237390011346,"version":"1.1"}
+{"benchmark":"multiclient","duration":"22.837493ms","failures":0,"requests":50,"throughput":2189.382170801322,"version":"1.1"}
+{"benchmark":"multiclient","duration":"25.855379ms","failures":0,"requests":100,"throughput":3867.667149648048,"version":"1.1"}
+1: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"40.147314ms","failures":1,"requests":149,"throughput":3711.3317219677506,"version":"1.1"}
+53: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"50.805403ms","failures":53,"requests":147,"throughput":2893.3930511288336,"version":"1.1"}
+100: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"7.86555661s","failures":100,"requests":150,"throughput":19.07048762566849,"version":"1.1"}
+141: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.384633072s","failures":141,"requests":159,"throughput":66.6769247927297,"version":"1.1"}
+206: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.438487356s","failures":206,"requests":144,"throughput":59.053002528670895,"version":"1.1"}
+241: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.454203711s","failures":241,"requests":159,"throughput":64.7867979692742,"version":"1.1"}
+290: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.475101527s","failures":290,"requests":160,"throughput":64.64381289196304,"version":"1.1"}
+353: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.305040785s","failures":353,"requests":147,"throughput":34.14601796856147,"version":"1.1"}
+398: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.368844346s","failures":398,"requests":152,"throughput":34.7918094493724,"version":"1.1"}
+436: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.374890127s","failures":436,"requests":164,"throughput":37.48665571915973,"version":"1.1"}
+505: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.473192835s","failures":505,"requests":145,"throughput":32.41532510413225,"version":"1.1"}
+520: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.437456927s","failures":520,"requests":180,"throughput":40.563774017676224,"version":"1.1"}
+644: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.67703583s","failures":644,"requests":106,"throughput":12.216153312807053,"version":"1.1"}
+758: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.004599441s","failures":758,"requests":42,"throughput":2.0995171697324664,"version":"1.1"}
+798: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.015766171s","failures":798,"requests":52,"throughput":2.5979520122162802,"version":"1.1"}
+818: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.002295131s","failures":818,"requests":82,"throughput":4.099529552131974,"version":"1.1"}
+881: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.017703096s","failures":881,"requests":69,"throughput":3.4469489166210976,"version":"1.1"}
+950: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.016917156s","failures":950,"requests":50,"throughput":2.4978871426768468,"version":"1.1"}
+{"benchmark":"multiclient","duration":"18.808411ms","failures":0,"requests":50,"throughput":2658.385123549246,"version":"1.1"}
+{"benchmark":"multiclient","duration":"31.0145ms","failures":0,"requests":100,"throughput":3224.2983120798335,"version":"1.1"}
+{"benchmark":"multiclient","duration":"34.571214ms","failures":0,"requests":150,"throughput":4338.869904886765,"version":"1.1"}
+52: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"50.069117ms","failures":52,"requests":148,"throughput":2955.9139219491326,"version":"1.1"}
+{"benchmark":"multiclient","duration":"60.603683ms","failures":0,"requests":250,"throughput":4125.161832161257,"version":"1.1"}
+154: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.388924728s","failures":154,"requests":146,"throughput":61.11536219152067,"version":"1.1"}
+182: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.431028131s","failures":182,"requests":168,"throughput":69.10656353898028,"version":"1.1"}
+245: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.447292887s","failures":245,"requests":155,"throughput":63.33528807416502,"version":"1.1"}
+250: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.479340198s","failures":250,"requests":200,"throughput":80.66662258020631,"version":"1.1"}
+350: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.293289127s","failures":350,"requests":150,"throughput":34.93824794064469,"version":"1.1"}
+384: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.329533041s","failures":384,"requests":166,"throughput":38.341317280179176,"version":"1.1"}
+400: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.345143049s","failures":400,"requests":200,"throughput":46.02840406969534,"version":"1.1"}
+502: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.394255719s","failures":502,"requests":148,"throughput":33.68033393233663,"version":"1.1"}
+527: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.470012977s","failures":527,"requests":173,"throughput":38.702348492085825,"version":"1.1"}
+581: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.582765831s","failures":581,"requests":169,"throughput":36.87729337091673,"version":"1.1"}
+762: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.020633011s","failures":762,"requests":38,"throughput":1.8980418840464004,"version":"1.1"}
+774: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.030161055s","failures":774,"requests":76,"throughput":3.794278028584728,"version":"1.1"}
+839: rpc error: code = Unavailable desc = transport is closing
+8: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: <nil>
+{"benchmark":"multiclient","duration":"20.013648404s","failures":847,"requests":53,"throughput":2.6481928197263236,"version":"1.1"}
+897: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.003493143s","failures":897,"requests":53,"throughput":2.6495372393769516,"version":"1.1"}
+7: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: <nil>
+964: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.995940784s","failures":971,"requests":29,"throughput":1.4502943529021006,"version":"1.1"}
+{"benchmark":"multiclient","duration":"14.98413ms","failures":0,"requests":50,"throughput":3336.863735165138,"version":"1.1"}
+{"benchmark":"multiclient","duration":"30.53546ms","failures":0,"requests":100,"throughput":3274.881072693845,"version":"1.1"}
+{"benchmark":"multiclient","duration":"36.795179ms","failures":0,"requests":150,"throughput":4076.6210160303885,"version":"1.1"}
+26: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"49.263893ms","failures":26,"requests":174,"throughput":3531.9985775383198,"version":"1.1"}
+63: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"67.342801ms","failures":63,"requests":187,"throughput":2776.837274707359,"version":"1.1"}
+160: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.385782097s","failures":160,"requests":140,"throughput":101.02598402958009,"version":"1.1"}
+192: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.402779083s","failures":192,"requests":158,"throughput":112.63355856582872,"version":"1.1"}
+22: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"106.799928ms","failures":22,"requests":378,"throughput":3539.3282287606035,"version":"1.1"}
+264: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.449104024s","failures":264,"requests":186,"throughput":75.94614119175527,"version":"1.1"}
+346: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.493450201s","failures":346,"requests":154,"throughput":61.76181097911568,"version":"1.1"}
+376: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.32794136s","failures":376,"requests":174,"throughput":40.20387189349535,"version":"1.1"}
+448: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.345287309s","failures":448,"requests":152,"throughput":34.98042573276482,"version":"1.1"}
+465: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.364037896s","failures":465,"requests":185,"throughput":42.39193251955207,"version":"1.1"}
+539: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.710494748s","failures":539,"requests":161,"throughput":34.17900000172126,"version":"1.1"}
+607: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.402888244s","failures":607,"requests":143,"throughput":17.017958093410055,"version":"1.1"}
+767: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.007242704s","failures":767,"requests":33,"throughput":1.6494026932258081,"version":"1.1"}
+799: rpc error: code = Unavailable desc = transport is closing
+1: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: <nil>
+{"benchmark":"multiclient","duration":"20.028558397s","failures":800,"requests":50,"throughput":2.4964352904944622,"version":"1.1"}
+861: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.028561829s","failures":861,"requests":39,"throughput":1.9472191929193159,"version":"1.1"}
+921: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.026387545s","failures":921,"requests":29,"throughput":1.4480894237583277,"version":"1.1"}
+980: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.00859754s","failures":980,"requests":20,"throughput":0.9995703077148305,"version":"1.1"}
+{"benchmark":"multiclient","duration":"18.124292ms","failures":0,"requests":50,"throughput":2758.728451296194,"version":"1.1"}
+{"benchmark":"multiclient","duration":"30.518027ms","failures":0,"requests":100,"throughput":3276.7518031227905,"version":"1.1"}
+{"benchmark":"multiclient","duration":"39.724267ms","failures":0,"requests":150,"throughput":3776.0293978489267,"version":"1.1"}
+9: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"49.329399ms","failures":9,"requests":191,"throughput":3871.930408071665,"version":"1.1"}
+105: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.369296882s","failures":105,"requests":145,"throughput":105.89376336577388,"version":"1.1"}
+63: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"196.046863ms","failures":63,"requests":237,"throughput":1208.8946304639417,"version":"1.1"}
+197: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.421560049s","failures":197,"requests":153,"throughput":107.62823568911368,"version":"1.1"}
+256: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.460773351s","failures":256,"requests":144,"throughput":98.57792100425577,"version":"1.1"}
+294: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.452084968s","failures":294,"requests":156,"throughput":107.4317298490208,"version":"1.1"}
+329: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.4640753s","failures":329,"requests":171,"throughput":116.79727128789072,"version":"1.1"}
+388: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.302546677s","failures":388,"requests":162,"throughput":37.652119119589976,"version":"1.1"}
+449: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.353677304s","failures":449,"requests":151,"throughput":34.68332387916457,"version":"1.1"}
+503: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.445597269s","failures":503,"requests":147,"throughput":33.06642304849769,"version":"1.1"}
+494: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.390190651s","failures":494,"requests":206,"throughput":46.922791371959484,"version":"1.1"}
+579: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.832847263s","failures":579,"requests":171,"throughput":35.382868668158864,"version":"1.1"}
+744: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.007223287s","failures":744,"requests":56,"throughput":2.798989104919265,"version":"1.1"}
+746: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.001847353s","failures":746,"requests":104,"throughput":5.199519732581173,"version":"1.1"}
+826: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.014900755s","failures":826,"requests":74,"throughput":3.6972454125966014,"version":"1.1"}
+913: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.002343342s","failures":913,"requests":37,"throughput":1.8497832662590639,"version":"1.1"}
+928: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.998928993s","failures":928,"requests":72,"throughput":3.600192791584057,"version":"1.1"}
+{"benchmark":"multiclient","duration":"20.56873ms","failures":0,"requests":50,"throughput":2430.8744390149513,"version":"1.1"}
+{"benchmark":"multiclient","duration":"26.097202ms","failures":0,"requests":100,"throughput":3831.828408271507,"version":"1.1"}
+{"benchmark":"multiclient","duration":"39.194559ms","failures":0,"requests":150,"throughput":3827.061812329615,"version":"1.1"}
+{"benchmark":"multiclient","duration":"43.721909ms","failures":0,"requests":200,"throughput":4574.365680144479,"version":"1.1"}
+87: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.334134733s","failures":87,"requests":163,"throughput":122.17656580566666,"version":"1.1"}
+120: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"353.086794ms","failures":120,"requests":180,"throughput":509.78966944880983,"version":"1.1"}
+144: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.393355484s","failures":144,"requests":206,"throughput":147.8445395776689,"version":"1.1"}
+226: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.427335292s","failures":226,"requests":174,"throughput":121.90548427916264,"version":"1.1"}
+308: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.443683187s","failures":308,"requests":142,"throughput":98.35953017855572,"version":"1.1"}
+131: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.420751053s","failures":131,"requests":369,"throughput":259.72178533377445,"version":"1.1"}
+386: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.312813036s","failures":386,"requests":164,"throughput":38.02622525740298,"version":"1.1"}
+428: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.31574827s","failures":428,"requests":172,"throughput":39.854039030872386,"version":"1.1"}
+408: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.322584954s","failures":408,"requests":242,"throughput":55.98501881982908,"version":"1.1"}
+547: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.597569428s","failures":547,"requests":153,"throughput":33.27845340805585,"version":"1.1"}
+577: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.789554661s","failures":577,"requests":173,"throughput":36.120268426768455,"version":"1.1"}
+594: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.498887954s","failures":594,"requests":206,"throughput":24.238465210386273,"version":"1.1"}
+755: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.029448893s","failures":755,"requests":95,"throughput":4.743016171213832,"version":"1.1"}
+858: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.010217881s","failures":858,"requests":42,"throughput":2.0989276703418422,"version":"1.1"}
+3: rpc error: code = Unavailable desc = all SubConns are in TransientFailure, latest connection error: <nil>
+909: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.004353328s","failures":912,"requests":38,"throughput":1.8995865238398673,"version":"1.1"}
+974: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.997206342s","failures":974,"requests":26,"throughput":1.30018161313825,"version":"1.1"}
+{"benchmark":"multiclient","duration":"17.204269ms","failures":0,"requests":50,"throughput":2906.2554183499456,"version":"1.1"}
+{"benchmark":"multiclient","duration":"25.329945ms","failures":0,"requests":100,"throughput":3947.8964522031138,"version":"1.1"}
+{"benchmark":"multiclient","duration":"35.816132ms","failures":0,"requests":150,"throughput":4188.056934791283,"version":"1.1"}
+54: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"46.206774ms","failures":54,"requests":146,"throughput":3159.709872842454,"version":"1.1"}
+106: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.004469042s","failures":106,"requests":144,"throughput":7.198391504301742,"version":"1.1"}
+139: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.375182122s","failures":139,"requests":161,"throughput":67.784275786158,"version":"1.1"}
+203: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.41053204s","failures":203,"requests":147,"throughput":60.982387937892746,"version":"1.1"}
+158: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"2.411705577s","failures":158,"requests":242,"throughput":100.3439235319229,"version":"1.1"}
+280: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.453087861s","failures":280,"requests":170,"throughput":116.99223740194743,"version":"1.1"}
+287: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"1.45498644s","failures":287,"requests":213,"throughput":146.3931169008008,"version":"1.1"}
+391: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.291242539s","failures":391,"requests":159,"throughput":37.052205405535574,"version":"1.1"}
+446: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.311439242s","failures":446,"requests":154,"throughput":35.71893081544671,"version":"1.1"}
+508: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.412497342s","failures":508,"requests":142,"throughput":32.181322501519595,"version":"1.1"}
+545: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"4.744686946s","failures":545,"requests":155,"throughput":32.668119470067985,"version":"1.1"}
+650: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.995671086s","failures":650,"requests":100,"throughput":5.001082462794417,"version":"1.1"}
+713: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.890620634s","failures":713,"requests":87,"throughput":9.78559355769718,"version":"1.1"}
+698: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.013077806s","failures":698,"requests":152,"throughput":7.595033681147725,"version":"1.1"}
+874: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"8.637010372s","failures":874,"requests":26,"throughput":3.0103008888687253,"version":"1.1"}
+846: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"19.989990833s","failures":846,"requests":104,"throughput":5.202603686456628,"version":"1.1"}
+976: rpc error: code = Unavailable desc = transport is closing
+{"benchmark":"multiclient","duration":"20.020905426s","failures":976,"requests":24,"throughput":1.1987469841814735,"version":"1.1"}
